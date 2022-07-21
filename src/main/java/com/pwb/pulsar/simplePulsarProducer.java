@@ -26,7 +26,7 @@ public class simplePulsarProducer {
                 .create();
         System.out.println("Producer created");
         // Send a message to the topic
-        producer.send("Temp 100".getBytes());
+        producer.send("Temp=100;Status=0;Battery=50".getBytes());
         System.out.println("Message sent!");
         //Close the producer
         producer.close();
